@@ -5,6 +5,7 @@ define('CHARSET', 'utf8');
 define('USER', 'root');
 define('PASSWORD', '');
 
+
 class Conexao {
 
     /*
@@ -15,7 +16,8 @@ class Conexao {
     /*
      * Escondendo o construtor da classe
      */
-    public function __construct() {
+    public function __construct()
+    {
         //
     }
 
