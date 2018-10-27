@@ -1,10 +1,23 @@
 <?php
 
+include "src/conexao.php";
+$conexao = Conexao::getConexao();
 
 $email =  isset($_POST['email']) ? $_POST['email'] : "";
 
-$resposta = array(
-    "resposta" => "recebi o email"
-);
+if($email != ""){
 
-echo json_encode($resposta);
+
+    $resposta = array(
+        "resposta" => "OK"
+    );
+    echo json_encode($resposta);
+}else{
+
+    $resposta = array(
+        "resposta" => "ERROR"
+    );
+    echo json_encode($resposta);
+}
+
+
