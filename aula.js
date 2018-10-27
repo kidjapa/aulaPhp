@@ -33,17 +33,17 @@ $(document).ready(function() {
 });
 
 function salvarEmail(){
-    let url = "salvarEmail.php";
+    var url = "salvarEmail.php";
 
     $.ajax({
         url: url,
-        dataType: 'json',
+        dataType: 'html',
         method: 'POST',
         data: {
             email: $('#email').val(),
         },
         success:function(response){
-            console.log(response);
+            $('#resposta').html(response);
         },
         error:function(response){
             console.log(response);

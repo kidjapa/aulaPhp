@@ -23,6 +23,9 @@
                 </div>
                 <a href="#" class="btn btn-primary" id="btSalvar">Salvar</a>
             </form>
+            <div id="resposta" style="margin-top: 20px">
+
+            </div>
             <hr>
         </div>
         <div class="col-md-3">
